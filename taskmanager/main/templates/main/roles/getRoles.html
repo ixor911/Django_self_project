@@ -1,0 +1,21 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Roles{% endblock %}
+
+{% block body %}
+    <h1>Roles</h1>
+    {% if roles %}
+        {% for elem in roles %}
+            <div class="alert alert-warning mt-2">
+                <h3>{{ elem.name }}</h3>
+                <a href="{% url 'infoRole' %}?role_id={{ elem.id }}"><button class="btn">info</button></a>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>There are no Roles</p>
+    {% endif %}
+
+    <a href="{% url 'addRole' %}"><button class="btn btn-success">Add</button></a>
+{% endblock %}
+
+

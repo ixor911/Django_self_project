@@ -1,0 +1,12 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+    <div class="form-control">
+        <h3>{{ role.name }}</h3>
+        <p>{{ role.description }}</p>
+    </div>
+    <a href="{% url 'dellRole' %}?role_id={{ role.id }}"><button class="btn btn-danger">Yes</button></a>
+    <a href="{% url 'infoRole' %}?role_id={{ role.id }}"><button class="btn btn-success">No</button></a>
+{% endblock %}

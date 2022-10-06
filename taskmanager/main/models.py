@@ -65,7 +65,7 @@ class Message(models.Model):
         return self.text
 
     text = models.TextField('Text')
-    date = models.DateField('Date', auto_now=True)
+    date = models.DateTimeField('Date', auto_now=True)
 
     writer = models.ForeignKey(
         Employee,
