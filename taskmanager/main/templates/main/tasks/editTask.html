@@ -1,0 +1,18 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Task{% endblock %}
+
+{% block body %}
+    <h1>Create task</h1>
+    <form method="post">
+        {% csrf_token %}
+
+        {{ form.name }}<br>
+        {{ form.description }}<br>
+        {{ form.employees }}<br>
+
+        <button type="submit" class="btn btn-success">Edit</button>
+        <span>{{ error }}</span>
+    </form>
+    <a href="{% url 'infoTask' %}?task_id={{ task.id }}"><button class="btn btn-primary">return</button></a>
+{% endblock %}

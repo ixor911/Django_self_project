@@ -1,0 +1,22 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Tasks{% endblock %}
+
+{% block body %}
+    <h1>Tasks</h1>
+    {% if tasks %}
+        {% for elem in tasks %}
+            <div class="alert alert-warning mt-2">
+                <h3>{{ elem.name }}</h3>
+                <a href="{% url 'infoTask' %}?task_id={{ elem.id }}"><button class="btn">info</button></a>
+                <a href="{% url 'getChat' %}?chat_id={{ elem.chat.id }}"><button class="btn">chat</button></a>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>There are no Tasks</p>
+    {% endif %}
+
+    <a href="{% url 'addTask' %}"><button class="btn btn-success">Add</button></a>
+{% endblock %}
+
+

@@ -9,6 +9,7 @@
     </div>
     <a href="{% url 'editRole' %}?role_id={{ role.id }}"><button class="btn btn-primary">Edit</button></a>
     <a href="{% url 'dellRoleSure' %}?role_id={{ role.id }}"><button class="btn btn-danger">Dell</button></a>
+    <a href="{% url 'getRoles' %}"><button class="btn btn-primary">return</button></a>
 {% endblock %}
 
 

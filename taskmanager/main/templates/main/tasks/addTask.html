@@ -1,0 +1,16 @@
+{% extends 'main/base.html' %}
+
+{% block title %}addRole{% endblock %}
+
+{% block body %}
+    <h1>Create role</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.name }}<br>
+        {{ form.description }}<br>
+        <button type="submit" class="btn btn-success">Add</button>
+        <span>{{ error }}</span>
+    </form>
+{% endblock %}
+
+

@@ -8,5 +8,5 @@
         <p>{{ role.description }}</p>
     </div>
     <a href="{% url 'dellRole' %}?role_id={{ role.id }}"><button class="btn btn-danger">Yes</button></a>
-    <a href="{% url 'infoRole' %}?role_id={{ role.id }}"><button class="btn btn-success">No</button></a>
+    <a href="{% url 'infoRole' %}?role_id={{ role.id }}"><button class="btn btn-success">return</button></a>
 {% endblock %}

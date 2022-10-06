@@ -19,8 +19,8 @@
 
           <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
             <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'home' %}">Home</a>
-            <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'chat' %}">Chat</a>
-            <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'tasks' %}">Tasks</a>
+            <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'getChat' %}?chat_name={{mainChatName}}">Chat</a>
+            <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'getTasks' %}">Tasks</a>
             <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'employees' %}">Employees</a>
             <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'getRoles' %}">Roles</a>
           </nav>

@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b1528d6b-cbb4-44b5-939a-6ac7f520519f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/taskmanager/main/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/taskmanager/main/templates/main/roles/addRole.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/taskmanager/main/templates/main/roles/dellRole.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/taskmanager/main/templates/main/roles/editRole.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/taskmanager/main/templates/main/roles/getRoles.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/taskmanager/main/templates/main/roles/infoRole.html" afterDir="false" />
+    <list default="true" id="b1528d6b-cbb4-44b5-939a-6ac7f520519f" name="Changes" comment="made roles managing sites (no bootstrap, no functional)">
+      <change afterPath="$PROJECT_DIR$/taskmanager/main/templates/main/tasks/addTask.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/taskmanager/main/templates/main/tasks/dellTask.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/taskmanager/main/templates/main/tasks/editTask.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/taskmanager/main/templates/main/tasks/getTasks.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/taskmanager/main/templates/main/tasks/infoTask.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/taskmanager/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/taskmanager/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taskmanager/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/taskmanager/main/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/taskmanager/main/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/taskmanager/main/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/taskmanager/main/templates/main/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/taskmanager/main/templates/main/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/taskmanager/main/templates/main/chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/taskmanager/main/templates/main/chat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taskmanager/main/templates/main/employees.html" beforeDir="false" afterPath="$PROJECT_DIR$/taskmanager/main/templates/main/employees.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taskmanager/main/templates/main/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/taskmanager/main/templates/main/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taskmanager/main/templates/main/roles.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/taskmanager/main/templates/main/tasks.html" beforeDir="false" afterPath="$PROJECT_DIR$/taskmanager/main/templates/main/tasks.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/taskmanager/main/templates/main/roles/dellRole.html" beforeDir="false" afterPath="$PROJECT_DIR$/taskmanager/main/templates/main/roles/dellRole.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/taskmanager/main/templates/main/roles/infoRole.html" beforeDir="false" afterPath="$PROJECT_DIR$/taskmanager/main/templates/main/roles/infoRole.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/taskmanager/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/taskmanager/main/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/taskmanager/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/taskmanager/main/views.py" afterDir="false" />
     </list>
@@ -68,6 +65,14 @@
       <option name="presentableId" value="Default" />
       <updated>1664950150321</updated>
     </task>
+    <task id="LOCAL-00001" summary="made roles managing sites (no bootstrap, no functional)">
+      <created>1665050180195</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665050180196</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -80,5 +85,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="made roles managing sites (no bootstrap, no functional)" />
+    <option name="LAST_COMMIT_MESSAGE" value="made roles managing sites (no bootstrap, no functional)" />
   </component>
 </project>

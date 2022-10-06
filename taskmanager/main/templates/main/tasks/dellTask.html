@@ -1,0 +1,12 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Task{% endblock %}
+
+{% block body %}
+    <div class="form-control">
+        <h3>{{ task.name }}</h3>
+        <p>{{ task.description }}</p>
+    </div>
+    <a href="{% url 'dellTask' %}?task_id={{ task.id }}"><button class="btn btn-danger">Yes</button></a>
+    <a href="{% url 'infoTask' %}?task_id={{ task.id }}"><button class="btn btn-success">return</button></a>
+{% endblock %}
