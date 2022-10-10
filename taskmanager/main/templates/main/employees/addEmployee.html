@@ -1,0 +1,26 @@
+{% extends 'main/base.html' %}
+
+{% block title %}addRole{% endblock %}
+
+{% block body %}
+    <h1>Create role</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.name }}<br>
+        {{ form.login }}<br>
+        {{ form.password }}<br>
+        {{ form.age }}<br>
+        {{ form.email }}<br>
+        {{ form.phone }}<br>
+        {{ form.role }}<br>
+        <input type="file" name="file">
+
+        <button type="submit" class="btn btn-success">Add</button>
+        <span>{{ error }}</span>
+    </form>
+
+
+
+{% endblock %}
+
+

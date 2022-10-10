@@ -21,7 +21,7 @@ class Employee(models.Model):
     email = models.EmailField('Mail', max_length=50, null=True, blank=True)
     age = models.PositiveSmallIntegerField('Age', blank=True, null=True)
     phone = models.CharField('Phone', max_length=20, blank=True)
-    imagePath = models.FilePathField('ImagePath', path='main/images', blank=True)
+    imagePath = models.CharField('ImagePath', max_length=100, blank=True)
 
     role = models.ForeignKey(
         Role,

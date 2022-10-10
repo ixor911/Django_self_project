@@ -6,7 +6,12 @@ urlpatterns = [
 
     path('getChat', views.getChat, name='getChat'),
 
-    path('Employees', views.employees, name='employees'),
+    path('getEmployees', views.getEmployees, name='getEmployees'),
+    path('addEmployee', views.addEmployee, name='addEmployee'),
+    path('infoEmployee', views.infoEmployee, name='infoEmployee'),
+    path('editEmployee', views.editEmployee, name='editEmployee'),
+    path('dellEmployeeSure', views.dellEmployeeSure, name='dellEmployeeSure'),
+    path('dellEmployee', views.dellEmployee, name='dellEmployee'),
 
     path('Roles', views.getRoles, name='getRoles'),
     path('addRole', views.addRole, name='addRole'),

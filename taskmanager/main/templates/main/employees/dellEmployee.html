@@ -1,0 +1,12 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Task{% endblock %}
+
+{% block body %}
+    <div class="form-control">
+        <h3>{{ employee.name }}</h3>
+        <p></p>
+    </div>
+    <a href="{% url 'dellEmployee' %}?employee_id={{ employee.id }}"><button class="btn btn-danger">Yes</button></a>
+    <a href="{% url 'infoEmployee' %}?employee_id={{ employee.id }}"><button class="btn btn-success">return</button></a>
+{% endblock %}
